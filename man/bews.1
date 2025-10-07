@@ -1,0 +1,64 @@
+.TH bews 1  "2012-03-14" "version 0.1" "USER COMMANDS"
+.SH NAME
+
+bews \- dummy web server
+
+.SH SYNOPSIS
+
+.B bews
+[\-v] [\-p port] [\-r roodir] [-h]
+
+.SH DESCRIPTION
+This software is a joke.  Come on, it does not even serve GET requests in a standard way.  But I love it, like I'd love my little retarded child.
+.PP
+
+.SH OPTIONS
+
+.TP
+\-v
+increase the verbosity level.  This option is cumulative (probably the best feature!)
+.TP
+\-p, \-\-port=PORT
+PORT is the port the server will listen to
+.TP
+\-r, \-\-roodir=DIR
+DIR is the document root directory
+.TP
+\-d, \-\-daemonize
+run as daemon
+.TP
+\-h, \-\-help
+well... displays help
+.TP
+\-V, \-\-version
+show the version
+
+.SH EXAMPLES
+
+.TP
+
+Basic usecase: run the web server on port TCP/80, and use /usr/local/var/www
+as the root directory.
+
+.RS
+.B bews
+
+
+.RE
+If you're not a privileged user, you can change the port and root directory, to share useful stuff with all your friends!
+
+.RS
+.B bews
+-p 1337 -r ~/.porn
+
+.PP
+
+.SH NOTES
+This "thing" is probably full of ugly bugs.  Do not bother reporting bugs, it's not worth it, dude!
+Anyway, if you're that stubborn, report bugs and comments to https://github.com/pozdnychev/bews/issues
+
+.SH AUTHOR
+Guillaume LECONTE <guillaume@bk.ru>
+
+.SH SEE ALSO
+nginx(1)
