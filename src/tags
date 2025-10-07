@@ -1,0 +1,135 @@
+ADDRFMT	bews.c	24
+ADDRTOFMT	bews.c	/^#define ADDRTOFMT(a)                              /
+BUF_MAXSZ	utils.c	5
+CHECK_FIELD	bews.c	/^#define CHECK_FIELD(F, f) do {                    /
+CHECK_FIELD	bews.c	1241
+M	bews.c	/^#define M(c, msg) { msg, c, CODE_##c }$/
+M	bews.c	152
+MAP	bews.c	/^#define MAP(x) { .id = x, .str = #x, .len = 0 }$/
+MAP	bews.c	43
+MAP	bews.c	/^#define MAP(x) case x: return #x$/
+MAP	bews.c	1101
+MAX	tpool.c	/^#define MAX(a, b) ((a) > (b) ? (a) : (b))$/
+MAXEVENTS	main.c	20
+Mmain	main.c	/^main(int argc,$/
+attr	tpool.c	36
+bews_check_path	bews.c	/^bews_check_path(char *rootdir,$/
+bews_ctx_free	bews.c	/^bews_ctx_free(tbews_ctx *ctx)$/
+bews_ctx_new	bews.c	/^bews_ctx_new(void)$/
+bews_permissions_to_str	bews.c	/^bews_permissions_to_str(mode_t mode,$/
+bews_response_connect	bews.c	/^bews_response_connect(tbews_request *req)$/
+bews_response_delete	bews.c	/^bews_response_delete(tbews_request *req)$/
+bews_response_get	bews.c	/^bews_response_get(tbews_request *req)$/
+bews_response_head	bews.c	/^bews_response_head(tbews_request *req)$/
+bews_response_options	bews.c	/^bews_response_options(tbews_request *req)$/
+bews_response_post	bews.c	/^bews_response_post(tbews_request *req)$/
+bews_response_put	bews.c	/^bews_response_put(tbews_request *req)$/
+bews_response_trace	bews.c	/^bews_response_trace(tbews_request *req)$/
+bews_send_buffer	bews.c	/^bews_send_buffer(int fd,$/
+bews_send_content	bews.c	/^bews_send_content(tbews_request *req,$/
+bews_send_header	bews.c	/^bews_send_header(tbews_request *req,$/
+bews_set_code_from_path	bews.c	/^bews_set_code_from_path(tbews_request *req,$/
+bews_set_content_dir	bews.c	/^bews_set_content_dir(tbews_request *req,$/
+bews_set_content_infos	bews.c	/^bews_set_content_infos(tbews_request *req,$/
+bews_set_content_infos_ext	bews.c	/^bews_set_content_infos_ext(tbews_request *req,$/
+bews_set_content_reg	bews.c	/^bews_set_content_reg(tbews_request *req,$/
+bews_set_dir_entry	bews.c	/^bews_set_dir_entry(struct stat *stbuf,$/
+bews_set_full_path	bews.c	/^bews_set_full_path(tbews_ctx *ctx,$/
+bews_set_path_from_uri	bews.c	/^bews_set_path_from_uri(tbews_request *req)$/
+bews_uri_type_to_str	bews.c	/^bews_uri_type_to_str(tbews_uri_type type)$/
+bews_url_dummy_decode	bews.c	/^bews_url_dummy_decode(char *dest,$/
+buf	bews.c	611
+buf_len	bews.c	612
+build_directory_buf_cb	bews.c	/^build_directory_buf_cb(void *elem,$/
+cmp_func	list.c	20
+codes	bews.c	105
+cursor	bews.c	610
+dir_conv	bews.c	608
+do_answer	bews.c	/^do_answer(tbews_request *req)$/
+do_bind	main.c	/^do_bind(uint16_t p)$/
+do_handle_event	main.c	/^do_handle_event(tbews_ctx *ctx,$/
+do_handle_notification	main.c	/^do_handle_notification(int fd,$/
+do_handle_request	bews.c	/^do_handle_request(tbews_request *req)$/
+do_loop	main.c	/^do_loop(tbews_ctx *ctx,$/
+do_parse_request	bews.c	/^do_parse_request(tbews_request *req,$/
+do_parse_request_field	bews.c	/^do_parse_request_field(tbews_request *req,$/
+do_parse_request_line	bews.c	/^do_parse_request_line(tbews_request *req,$/
+do_process_request_func	main.c	/^do_process_request_func(tbews_request *req)$/
+do_process_waiting_data	main.c	/^do_process_waiting_data(tbews_ctx *ctx,$/
+do_set_non_blocking	main.c	/^do_set_non_blocking(int fd)$/
+elem	list.c	9
+error	bews.c	614
+field_name	bews.c	50
+free_func	list.c	19
+head	list.c	14
+id	bews.c	47
+idle_cond	tpool.c	20
+len	bews.c	49
+list	list.c	13
+list_add	list.c	/^list_add(tlist *q,$/
+list_add_sorted	list.c	/^list_add_sorted(tlist *q,$/
+list_add_tail	list.c	/^list_add_tail(tlist *q,$/
+list_add_uniq	list.c	/^list_add_uniq(tlist *q,$/
+list_default_cmp	list.c	/^list_default_cmp(void *a,$/
+list_free	list.c	/^list_free(tlist *q)$/
+list_get	list.c	/^list_get(tlist *q,$/
+list_get_nth	list.c	/^list_get_nth(tlist *q,$/
+list_get_size	list.c	/^list_get_size(tlist *q)$/
+list_map	list.c	/^list_map(tlist *q,$/
+list_map_internal	list.c	/^list_map_internal(tnode *head,$/
+list_new	list.c	/^list_new(void)$/
+list_set_cmp_func	list.c	/^list_set_cmp_func(tlist *list,$/
+list_set_free_func	list.c	/^list_set_free_func(tlist *list,$/
+methods	bews.c	33
+methods_init	bews.c	/^methods_init(void)$/
+n_dir_entries	bews.c	609
+n_tasks	tpool.c	28
+n_workers	tpool.c	23
+n_workers_min	tpool.c	26
+n_workers_needed	tpool.c	24
+n_workers_running	tpool.c	25
+name	bews.c	48
+next	list.c	10
+node	list.c	8
+p	bews.c	613
+progname	main.c	22
+reqpool	main.c	23
+reqpool_delete_func	main.c	/^reqpool_delete_func(ttask_pool *pool,$/
+request_field_init	bews.c	/^request_field_init(void)$/
+run	main.c	/^run(tbews_ctx *ctx)$/
+signal_handler_usr1	main.c	/^signal_handler_usr1(int signo)$/
+signal_handler_usr2	main.c	/^signal_handler_usr2(int signo)$/
+size	list.c	17
+stask_pool	tpool.c	17
+stopped	tpool.c	37
+strnchr	utils.c	/^strnchr(char *haystack,$/
+strnstr	utils.c	/^strnstr(char *haystack,$/
+tail	list.c	15
+task_cond	tpool.c	19
+task_delete_func	tpool.c	34
+task_get_func	tpool.c	32
+task_last	tpool.c	30
+task_lock	tpool.c	21
+task_pool_set_delete_func	tpool.c	/^task_pool_set_delete_func(ttask_pool *pool,$/
+task_put_func	tpool.c	33
+task_queue	tpool.c	29
+tnode	list.c	11
+ttask_delete_func	tpool.c	15
+ttask_get_func	tpool.c	13
+ttask_pool_create	tpool.c	/^ttask_pool_create(int n_workers)$/
+ttask_pool_ctor	tpool.c	/^ttask_pool_ctor(ttask_pool *pool,$/
+ttask_pool_delete_func	tpool.c	/^ttask_pool_delete_func(ttask_pool *pool,$/
+ttask_pool_dtor	tpool.c	/^ttask_pool_dtor(ttask_pool *pool)$/
+ttask_pool_free	tpool.c	/^ttask_pool_free(ttask_pool *pool)$/
+ttask_pool_get	tpool.c	/^ttask_pool_get(ttask_pool *pool)$/
+ttask_pool_get_func	tpool.c	/^ttask_pool_get_func(ttask_pool *pool)$/
+ttask_pool_put	tpool.c	/^ttask_pool_put(ttask_pool *pool,$/
+ttask_pool_put_func	tpool.c	/^ttask_pool_put_func(ttask_pool *pool,$/
+ttask_pool_set_workers	tpool.c	/^ttask_pool_set_workers(ttask_pool *pool,$/
+ttask_pool_set_workers_min	tpool.c	/^ttask_pool_set_workers_min(ttask_pool *pool,$/
+ttask_pool_stop	tpool.c	/^ttask_pool_stop(ttask_pool *pool)$/
+ttask_pool_wait_idle	tpool.c	/^ttask_pool_wait_idle(ttask_pool *pool)$/
+ttask_put_func	tpool.c	14
+usage	main.c	/^usage(void)$/
+version	main.c	/^version(void)$/
+worker_main	tpool.c	/^worker_main(void *arg)$/
